@@ -46,13 +46,13 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBoxEno = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridViewReader = New System.Windows.Forms.DataGridView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DataGridViewReader = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridViewReader, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
+        CType(Me.DataGridViewReader, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -271,17 +271,6 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Eno"
         '
-        'DataGridViewReader
-        '
-        Me.DataGridViewReader.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewReader.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.DataGridViewReader.Location = New System.Drawing.Point(41, 680)
-        Me.DataGridViewReader.Name = "DataGridViewReader"
-        Me.DataGridViewReader.RowHeadersWidth = 82
-        Me.DataGridViewReader.RowTemplate.Height = 41
-        Me.DataGridViewReader.Size = New System.Drawing.Size(1466, 618)
-        Me.DataGridViewReader.TabIndex = 1
-        '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
@@ -301,19 +290,30 @@ Partial Class Form1
         Me.EditToolStripMenuItem.Size = New System.Drawing.Size(158, 38)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
+        'DataGridViewReader
+        '
+        Me.DataGridViewReader.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewReader.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.DataGridViewReader.Location = New System.Drawing.Point(41, 664)
+        Me.DataGridViewReader.Name = "DataGridViewReader"
+        Me.DataGridViewReader.RowHeadersWidth = 82
+        Me.DataGridViewReader.RowTemplate.Height = 41
+        Me.DataGridViewReader.Size = New System.Drawing.Size(1466, 629)
+        Me.DataGridViewReader.TabIndex = 1
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1555, 1358)
+        Me.ClientSize = New System.Drawing.Size(2776, 1358)
         Me.Controls.Add(Me.DataGridViewReader)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
         Me.Text = "Admin"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridViewReader, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip1.ResumeLayout(False)
+        CType(Me.DataGridViewReader, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -333,7 +333,6 @@ Partial Class Form1
     Friend WithEvents TextBoxName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents DateTimePickerText As DateTimePicker
-    Friend WithEvents DataGridViewReader As DataGridView
     Friend WithEvents ButtonClear As Button
     Friend WithEvents ButtonDelete As Button
     Friend WithEvents ButtonUpdate As Button
@@ -345,4 +344,5 @@ Partial Class Form1
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents DeleteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DataGridViewReader As DataGridView
 End Class

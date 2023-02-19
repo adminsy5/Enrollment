@@ -210,4 +210,8 @@ Public Class Form1
         deletedTable()
         ButtonRefresh_Click(sender, e)
     End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
 End Class
